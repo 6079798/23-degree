@@ -1,0 +1,5 @@
+@import '_fonts.css';
+@import '../../node_modules/bootstrap/dist/css/bootstrap-grid.min.css';
+@import '../../node_modules/tiny-slider/dist/tiny-slider.css';
+@import '../../node_modules/nouislider/distribute/nouislider.min.css';
+@import '../../node_modules/toastify-js/src/toastify.css';

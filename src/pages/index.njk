@@ -1,0 +1,495 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+    <section class="hero">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="hero__inner">
+                <h1 class="hero__title">
+                    Услуги по 3D моделированию <span class="d-none d-sm-block">полный спектр услуг</span>
+                </h1>
+                <h2 class="hero__subtitle">
+                    Оставьте заявку сейчас и получите дизайн интерьера 25 м<sup>2</sup> бесплатно!*
+                </h2>
+                <form class="form hero__form">
+                    <div class="form__inner">
+                        <div class="form__group">
+                            <input class="form__input" type="text" name="name" placeholder="Ваше имя"
+                                   data-pristine-required
+                                   data-pristine-required-message="Обязательное поле" data-pristine-name>
+                        </div>
+                        <div class="form__group">
+                            <input class="form__input" type="text" name="email" placeholder="E-mail"
+                                   data-pristine-required
+                                   data-pristine-required-message="Обязательное поле" data-pristine-email>
+                        </div>
+                        <div class="form__group">
+                            <input class="form__input" type="text" name="phone" placeholder="Номер телефона"
+                                   data-pristine-required
+                                   data-pristine-required-message="Обязательное поле" data-pristine-phone>
+                        </div>
+                        <button class="form__submit" type="submit">
+                            Оставить заявку!
+                        </button>
+                    </div>
+                </form>
+                <div class="hero__footnote">
+                    *Мы гарантируем конфиденциальность передаваемых данных
+                </div>
+            </div>
+            <a data-scroll href="#services" class="hero__scroll-down" aria-label="Перейти к услугам"></a>
+        </div>
+    </section>
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="title services__title">Наши услуги</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6 services__service">
+                    <h3 class="services__subtitle">
+                        Дизайн интерьера
+                    </h3>
+                    <div class="services__text">
+                        <p class="text">
+                            Услуга, направленная на разработку интерьеров помещений с целью обеспечить удобство и
+                            эстетически приятное ощущение у человека при нахождении в помещении.
+                        </p>
+                    </div>
+                    <button type="button" class="section-btn">
+                        Оставить заявку
+                    </button>
+                </div>
+                <div class="col-lg-6 services__img">
+                    <img data-ofi src="/img/content/services/01.jpg" alt="Дизайн интерьера">
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 services__service">
+                    <h3 class="services__subtitle">
+                        Дизайн экстерьера
+                    </h3>
+                    <div class="services__text">
+                        <p class="text">
+                            Услуга, направленная на разработку дизайна прилегающих элементов зданий, а также дизайн
+                            самих
+                            зданий, позволяющая обеспечить удобство людей при нахождении на территории.
+                        </p>
+                    </div>
+                    <button type="button" class="section-btn">
+                        Оставить заявку
+                    </button>
+                </div>
+                <div class="col-lg-6">
+                    <div class="services__img">
+                        <img data-ofi src="/img/content/services/02.jpg" alt="Дизайн экстерьера">
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 services__service">
+                    <h3 class="services__subtitle">
+                        Визуализация
+                    </h3>
+                    <div class="services__text">
+                        <p class="text">
+                            Услуга, направленная на разработку дизайна прилегающих элементов зданий, а также дизайн
+                            самих
+                            зданий, позволяющая обеспечить удобство людей при нахождении на территории.
+                        </p>
+                    </div>
+                    <button type="button" class="section-btn">
+                        Оставить заявку
+                    </button>
+                </div>
+                <div class="col-lg-6">
+                    <div class="services__img">
+                        <img data-ofi src="/img/content/services/03.jpg" alt="Визуализация">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="prices" class="prices">
+        <div class="container">
+            <h2 class="title prices__title">
+                Рассчитать стоимость
+            </h2>
+            <h3 class="prices__subtitle">
+                Рассчитайте предварительную стоимость разработки интерьера
+            </h3>
+            <div class="row justify-content-between">
+                <div class="col-lg-7 mb-3 mb-lg-0">
+                    <div class="prices__area">
+                        <h4 class="prices__label">Площадь помещения:</h4>
+                        <div class="prices__slider"></div>
+                    </div>
+                    <div class="prices__options">
+                        <div class="prices__background">
+                            <span></span>
+                        </div>
+                        <h4 class="prices__label">Выберите пакет:</h4>
+                        <div role="button" data-base="3756" class="prices__option">
+                            Light
+                            <span class="prices__balloon">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis commodi dolore ipsa ipsum nam nobis numquam odit sit velit voluptatum? Amet cum eligendi id illo officiis omnis pariatur quos vero!
+                            </span>
+                        </div>
+                        <div role="button" data-base="4850" class="prices__option prices__option--active">
+                            Medium
+                            <span class="prices__balloon">
+                                План расстановки мебели 3D визуализация. Все рабочие чертежи (план полов, план потолка, развертки по стенам, план электросетей)
+                            </span>
+                        </div>
+                        <div role="button" data-base="5250" class="prices__option">
+                            Full
+                            <span class="prices__balloon">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, repellat.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <ul class="prices__total">
+                        <li>
+                            Площадь помещения:
+                            <span data-area></span>
+                        </li>
+                        <li>
+                            Средняя стоимость м<sup>2</sup>:
+                            <span data-price></span>
+                        </li>
+                        <li>
+                            Средняя стоимость объекта:
+                            <span data-total></span>
+                        </li>
+                    </ul>
+                    <button type="button" class="section-btn prices__btn">
+                        Получить консультацию специалиста
+                    </button>
+                    <div class="prices__phone">
+                        <span>или позвоните нам по телефону:</span>
+                        + 7 727 388 71 77
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section data-top-trigger id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="title portfolio__title">
+                Портфолио
+            </h2>
+            <div data-filter-btns class="portfolio__filter">
+                <button type="button" data-filter="*" class="portfolio__btn portfolio__btn--active">все проекты</button>
+                <button type="button" data-filter=".exterior" class="portfolio__btn">экстерьеры</button>
+                <button type="button" data-filter=".residential" class="portfolio__btn">жилые интерьеры</button>
+                <button type="button" data-filter=".public" class="portfolio__btn">общественные интерьеры</button>
+            </div>
+            <div class="row portfolio__items">
+                <div class="col-sm-6 col-lg-4 portfolio__item public">
+                    <img data-ofi src="/img/content/portfolio/01.jpg" alt="Портфолио">
+                </div>
+                <div class="col-sm-6 col-lg-4 portfolio__item exterior">
+                    <img data-ofi src="/img/content/portfolio/02.jpg" alt="Портфолио">
+                </div>
+                <div class="col-sm-6 col-lg-4 portfolio__item public">
+                    <img data-ofi src="/img/content/portfolio/03.jpg" alt="Портфолио">
+                </div>
+                <div class="col-sm-6 col-lg-4 portfolio__item exterior">
+                    <img data-ofi src="/img/content/portfolio/04.jpg" alt="Портфолио">
+                </div>
+                <div class="col-sm-6 col-lg-4 portfolio__item residential">
+                    <img data-ofi src="/img/content/portfolio/05.jpg" alt="Портфолио">
+                </div>
+                <div class="col-sm-6 col-lg-4 portfolio__item public">
+                    <img data-ofi src="/img/content/portfolio/06.jpg" alt="Портфолио">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="container">
+            <h1 class="title about__title">
+                Почему мы лучшие?
+            </h1>
+            <div class="row justify-content-center">
+                <div class="col-sm-6 col-lg-3 about__item">
+                    <div class="about__img">
+                        <img src="/img/content/about/01.png" alt="Профессиональные дизайнеры">
+                    </div>
+                    <div class="about__text">
+                        Профессиональные дизайнеры и визуализаторы с зарубежной практикой работы
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 about__item">
+                    <div class="about__img">
+                        <img src="/img/content/about/02.png" alt="Итеративный подход">
+                    </div>
+                    <div class="about__text">
+                        Итеративный подход, работаем до полного согласования с Вами
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 about__item">
+                    <div class="about__img">
+                        <img src="/img/content/about/03.png" alt="Решаем вопрос закупки">
+                    </div>
+                    <div class="about__text">
+                        Решаем вопрос закупки, берем авторский надзор на себя (пакет Full)
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 about__item">
+                    <div class="about__img">
+                        <img src="/img/content/about/04.png" alt="Над проектом работает группа специалистов">
+                    </div>
+                    <div class="about__text">
+                        Над проектом работает группа специалистов под началом project менеджера в ERP системе
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 about__item">
+                    <div class="about__img">
+                        <img src="/img/content/about/05.png" alt="Выполнение раньше установленных сроков">
+                    </div>
+                    <div class="about__text">
+                        Выполнение раньше установленных сроков
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 about__item">
+                    <div class="about__img">
+                        <img src="/img/content/about/06.png" alt="Дарим альбом проекта">
+                    </div>
+                    <div class="about__text">
+                        Дарим альбом проекта, вместе с 25% скидкой на следующее обращение
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="work" class="work">
+        <div class="container">
+            <h2 class="title work__title">
+                Процесс взаимодействия
+            </h2>
+            <div class="row align-items-center work__item">
+                <div class="col-lg-6 work__img">
+                    <img src="/img/content/work/01.jpg" alt="Заполнение брифа">
+                </div>
+                <div class="col-lg-6 work__text">
+                    Заполнение брифа
+                </div>
+            </div>
+            <div class="row align-items-center work__item">
+                <div class="col-lg-6 work__img">
+                    <img src="/img/content/work/02.jpg" alt="Исследование">
+                </div>
+                <div class="col-lg-6 work__text">
+                    Исследование
+                </div>
+            </div>
+            <div class="row align-items-center work__item">
+                <div class="col-lg-6 work__img">
+                    <img src="/img/content/work/03.jpg" alt="">
+                </div>
+                <div class="col-lg-6 work__text">
+                    Идея
+                </div>
+            </div>
+            <div class="row align-items-center work__item">
+                <div class="col-lg-6 work__img">
+                    <img src="/img/content/work/04.jpg" alt="Завершение">
+                </div>
+                <div class="col-lg-6 work__text">
+                    Завершение
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="clients" class="clients">
+        <div class="container">
+            <h2 class="title clients__title">
+                Нам доверяют более 50 компаний
+            </h2>
+            <div class="clients__list">
+                <div class="clients__logos  d-flex align-items-center">
+                    <img class="clients__logo" src="/img/content/clients/01.png" alt="Клиент">
+                    <img class="clients__logo" src="/img/content/clients/02.png" alt="Клиент">
+                    <img class="clients__logo" src="/img/content/clients/03.png" alt="Клиент">
+                    <img class="clients__logo" src="/img/content/clients/04.png" alt="Клиент">
+                    <img class="clients__logo" src="/img/content/clients/05.png" alt="Клиент">
+                    <img class="clients__logo" src="/img/content/clients/06.png" alt="Клиент">
+                    <img class="clients__logo" src="/img/content/clients/07.png" alt="Клиент">
+                    <img class="clients__logo" src="/img/content/clients/01.png" alt="Клиент">
+                    <img class="clients__logo" src="/img/content/clients/02.png" alt="Клиент">
+                    <img class="clients__logo" src="/img/content/clients/03.png" alt="Клиент">
+                    <img class="clients__logo" src="/img/content/clients/04.png" alt="Клиент">
+                    <img class="clients__logo" src="/img/content/clients/05.png" alt="Клиент">
+                    <img class="clients__logo" src="/img/content/clients/06.png" alt="Клиент">
+                    <img class="clients__logo" src="/img/content/clients/07.png" alt="Клиент">
+                </div>
+            </div>
+            <div class="clients__slider"></div>
+        </div>
+    </section>
+    <section id="team" class="team">
+        <div class="container">
+            <h2 class="title team__title">
+                Наша команда
+            </h2>
+            <div class="row team__members">
+                <div class="col-md-6 col-lg-4 team__member">
+                    <img data-ofi class="team__img" src="/img/content/team/01.jpg" alt="Директор компании">
+                    <h3 class="team__name">Ирина Притыкина</h3>
+                    <h4 class="team__position">Директор компании</h4>
+                </div>
+                <div class="col-md-6 col-lg-4 team__member">
+                    <img data-ofi class="team__img" src="/img/content/team/02.jpg" alt="Финансовый директор">
+                    <h3 class="team__name">Игорь Карий</h3>
+                    <h4 class="team__position">Финансовый директор</h4>
+                </div>
+                <div class="col-md-6 col-lg-4 team__member">
+                    <img data-ofi class="team__img" src="/img/content/team/03.jpg" alt="Инженер модельер">
+                    <h3 class="team__name">Илья Кондрашин</h3>
+                    <h4 class="team__position">Инженер модельер</h4>
+                </div>
+                <div class="col-md-6 col-lg-4 team__member">
+                    <img data-ofi class="team__img" src="/img/content/team/04.jpg" alt="3D дизайнер">
+                    <h3 class="team__name">Маргарита Гордеева</h3>
+                    <h4 class="team__position">3D дизайнер</h4>
+                </div>
+                <div class="col-md-6 col-lg-4 team__member">
+                    <img data-ofi class="team__img" src="/img/content/team/05.jpg" alt="Дизайнер интерьеров">
+                    <h3 class="team__name">Светлана Коток</h3>
+                    <h4 class="team__position">Дизайнер интерьеров</h4>
+                </div>
+                <div class="col-md-6 col-lg-4 team__member">
+                    <img data-ofi class="team__img" src="/img/content/team/06.jpg" alt="Дизайнер ландшафтов">
+                    <h3 class="team__name">Максим Ковальский</h3>
+                    <h4 class="team__position">Дизайнер ландшафтов</h4>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10 team__quote">
+                    <div class="team__slider">
+                        <div class="quote">
+                            <h3 class="quote__title">
+                                Ты - то, что ты делаешь!
+                            </h3>
+                            <div class="quote__text">
+                                То, что мы делаем, определяет то, кем мы являемся. Люди чувствуют старание и чувствуют
+                                неаккуратность. Это связано с уважением друг к другу, так что небрежность - это
+                                неуважение к
+                                самому
+                                себе.
+                            </div>
+                            <div class="quote__author">
+                                <span>Ислам Куаныш</span>
+                                Директор
+                            </div>
+                        </div>
+                        <div class="quote">
+                            <h3 class="quote__title">
+                                Lorem ipsum dolor sit amet.
+                            </h3>
+                            <div class="quote__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid aut cum cupiditate
+                                iste natus quas quis similique temporibus velit!
+                            </div>
+                            <div class="quote__author">
+                                <span>Jane Doe</span>
+                                CEO
+                            </div>
+                        </div>
+                        <div class="quote">
+                            <h3 class="quote__title">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </h3>
+                            <div class="quote__text">
+                                Ab aliquid aut cum cupiditate
+                                iste natus quas quis similique temporibus velit! Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Facere, nostrum.
+                            </div>
+                            <div class="quote__author">
+                                <span>John Doe</span>
+                                anonymous
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2 class="title blog__title">
+                Блог
+            </h2>
+            <div class="row blog__posts">
+                <div class="col-md-6 blog__post">
+                    <img data-ofi class="blog__img" src="/img/content/blog/01.jpg" alt="Минимализм">
+                    <a class="blog__link" href="#">
+                        Минимализм – это самый простой, практичный и «спорный» стиль в дизайне интерьеров
+                    </a>
+                </div>
+                <div class="col-md-6 blog__post">
+                    <img data-ofi class="blog__img" src="/img/content/blog/02.jpg" alt="Прованс">
+                    <a class="blog__link" href="#">
+                        Прованс - это спокойный южный регион Франции, с великолепнейшей природой
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <h2 class="title contacts__title">
+                Остались вопросы?
+            </h2>
+            <h3 class="contacts__subtitle">
+                Задайте их в форме ниже и наши специалисты свяжутся с Вами!
+            </h3>
+            <div class="row">
+                <div class="col-lg-8 mb-3 mb-lg-0">
+                    <form class="form contacts__form">
+                        <div class="form__group">
+                            <input class="form__input" type="text" name="name" placeholder="Ваше имя"
+                                   data-pristine-required
+                                   data-pristine-required-message="Обязательное поле" data-pristine-name>
+                        </div>
+                        <div class="form__group">
+                            <input class="form__input" type="text" name="email" placeholder="Ваш e-mail"
+                                   data-pristine-required
+                                   data-pristine-required-message="Обязательное поле" data-pristine-email>
+                        </div>
+                        <div class="form__group">
+                            <input class="form__input" type="text" name="phone" placeholder="Ваш номер телефона"
+                                   data-pristine-required
+                                   data-pristine-required-message="Обязательное поле" data-pristine-phone>
+                        </div>
+                        <div class="form__group form__group--textarea">
+                            <textarea class="form__textarea" name="message" placeholder="Ваше сообщение"
+                                      data-pristine-required
+                                      data-pristine-required-message="Обязательное поле"></textarea>
+                        </div>
+                        <button class="form__submit" type="submit">
+                            Оставить заявку!
+                        </button>
+                    </form>
+                </div>
+                <div class="col-lg-4">
+                    <ul class="contacts__items">
+                        <li class="contacts__item">+ 7 896 876 66 77</li>
+                        <li class="contacts__item contacts__item--whatsapp">+ 7 896 876 66 77</li>
+                        <li class="contacts__item contacts__item--envelope">sales@23degree.kz</li>
+                        <li class="contacts__item contacts__item--skype">skype: 23degree</li>
+                        <li class="contacts__item contacts__item--telegram">telegram: 23degree</li>
+                    </ul>
+                    <p class="contacts__hours">
+                        График работы: с 9-00 до 18-00. Пн.-Пт.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="map">
+        <script async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae0d78a5849e240cc8f40359ce41aff25a8f531a7aa2abf024f54c678614891b0&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
+    </section>
+{% endblock %}
